@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	margin: 0;
+	background: #FAFAFA;
+	font-family: system-ui;
+	display: grid;
+	place-content: center;
+	height: 100vh;
+}
+
+.montserrat {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nunito {
+	font-family: 'Nunito', sans-serif;
+}
