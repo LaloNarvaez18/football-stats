@@ -8,7 +8,7 @@ function Team({ type, logo, name, code }) {
 				src={logo}
 				alt={name}
 			/>
-			<span className='nunito text-[14px]'>{code}</span>
+			<span className='nunito text-[12px]'>{name}</span>
 		</div>
 	)
 }

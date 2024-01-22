@@ -1,11 +1,11 @@
 import LeagueCardInfo from './containers/LeagueCardInfo'
-import Fixture from './containers/Fixture'
+import Fixtures from './containers/Fixtures'
 import TabNavigation from './components/TabNavigation'
 import './App.css'
 
 function App() {
 	const data = [
-		{ label: 'Resultados', content: <Fixture /> },
+		{ label: 'Resultados', content: <Fixtures /> },
 		{ label: 'Posiciones', content: 'Posiciones' },
 		{ label: 'Estadisticas', content: 'Estadisticas' },
 		{ label: 'Equipos', content: 'Equipos' }
