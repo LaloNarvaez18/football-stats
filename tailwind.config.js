@@ -13,6 +13,7 @@ export default {
 			'yellow': '#FFBB00',
 			'white': '#FFFFFF',
 			'lightgray': '#FAFAFA',
+			'midgray': '#7E7E7E',
 			'darkgray': '#4C4C4C',
 			'gray': '#EEEEEE',
 		}

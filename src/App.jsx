@@ -1,10 +1,14 @@
-import LeagueCardInfo from './containers/LeagueCardInfo'
-import Fixtures from './containers/Fixtures'
-import TabNavigation from './components/TabNavigation'
+import AppContext from './context/AppContext'
+import useInitialState from './hooks/useInitialState'
+import LeagueCard from './containers/LeagueCard'
+import Fixtures from './pages/Fixtures'
+import Tabs from './components/Tabs'
 import './App.css'
 
 function App() {
-	const data = [
+	const initialState = useInitialState();
+
+	const tabs = [
 		{ label: 'Resultados', content: <Fixtures /> },
 		{ label: 'Posiciones', content: 'Posiciones' },
 		{ label: 'Estadisticas', content: 'Estadisticas' },
@@ -12,9 +16,11 @@ function App() {
 	]
 
 	return (
-		<LeagueCardInfo>
-			<TabNavigation data={[...data]} />
-		</LeagueCardInfo>
+		<AppContext.Provider value={initialState}>
+			<LeagueCard>
+				<Tabs data={[...tabs]} />
+			</LeagueCard>
+		</AppContext.Provider >
 	)
 }
 
